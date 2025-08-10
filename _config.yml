@@ -1,0 +1,54 @@
+# GitHub Pages Configuration
+# Metro: DevOps Survival Mini App
+
+# Настройки сайта
+title: Metro DevOps Survival
+description: Telegram Mini App для игры Metro: DevOps Survival
+author: B1ackGh0st
+
+# Настройки GitHub Pages
+theme: jekyll-theme-minimal
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Настройки для Mini App
+baseurl: ""
+url: "https://b1ackgh0st.github.io"
+
+# Настройки безопасности для Telegram Web App
+headers:
+  - path: "/*"
+    headers:
+      - name: "Content-Security-Policy"
+        value: "default-src 'self' https://telegram.org; script-src 'self' 'unsafe-inline' https://telegram.org; style-src 'self' 'unsafe-inline';"
+      - name: "X-Frame-Options"
+        value: "ALLOWALL"
+      - name: "X-Content-Type-Options"
+        value: "nosniff"
+
+# Исключения из сборки
+exclude:
+  - README.md
+  - .github/
+  - node_modules/
+  - package.json
+  - package-lock.json
+  - deepseek.py
+  - content/
+  - instance/
+  - tools/
+  - templates/
+  - static/
+  - mg_bot/
+  - .vscode/
+  - .idea/
+  - ot_tpl/
+  - scan_routers.py
+  - oui_db.json
+  - network_scanner.py
+  - tap_game_data.json
+  - tpl.png
+  - app.py
+  - .venv/
+  - __pycache__/
